@@ -163,74 +163,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://zihang-xie.github.io/2021/04/03/My-First-Post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Xie">
-      <meta itemprop="description" content="This is Xie's Zone">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xie's Zone">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/03/My-First-Post/" class="post-title-link" itemprop="url">My First Post</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-04-03 12:23:17 / 修改时间：16:55:04" itemprop="dateCreated datePublished" datetime="2021-04-03T12:23:17+08:00">2021-04-03</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Undefined/" itemprop="url" rel="index"><span itemprop="name">Undefined</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>This is my first post.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://zihang-xie.github.io/2021/04/03/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -256,7 +188,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-04-03 12:23:17 / 修改时间：17:51:48" itemprop="dateCreated datePublished" datetime="2021-04-03T12:23:17+08:00">2021-04-03</time>
+              <time title="创建时间：2021-04-03 12:23:17 / 修改时间：22:01:27" itemprop="dateCreated datePublished" datetime="2021-04-03T12:23:17+08:00">2021-04-03</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -286,6 +218,74 @@
 <h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">请输出所有满足题目条件的a、b、c的值。</span><br><span class="line">a、b、c之间用空格隔开。</span><br><span class="line">每个输出占一行。</span><br></pre></td></tr></table></figure>
 
 <h4 id="提交网址"><a href="#提交网址" class="headerlink" title="提交网址"></a>提交网址</h4><h5 id="http-t-cn-E9WMRTE"><a href="#http-t-cn-E9WMRTE" class="headerlink" title="http://t.cn/E9WMRTE"></a><a target="_blank" rel="noopener" href="http://t.cn/E9WMRTE">http://t.cn/E9WMRTE</a></h5><h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line"><span class="comment">#include &lt;cstdio&gt;</span></span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (int a = 0; a &lt;= 9; a++)&#123;</span><br><span class="line">        <span class="keyword">for</span> (int b = 0; b &lt;= 9; b++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (int c = 0; c &lt;= 9; c++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (a * 100 + b * 110 + c * 12 == 532)&#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">&quot;%d %d %d\n&quot;</span>, a, b, c);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zihang-xie.github.io/2021/04/03/My-First-Post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Xie">
+      <meta itemprop="description" content="This is Xie's Zone">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xie's Zone">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/03/My-First-Post/" class="post-title-link" itemprop="url">My First Post</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-04-03 12:23:17 / 修改时间：22:01:57" itemprop="dateCreated datePublished" datetime="2021-04-03T12:23:17+08:00">2021-04-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Undefined/" itemprop="url" rel="index"><span itemprop="name">Undefined</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>This is my first post.</p>
+
       
     </div>
 
