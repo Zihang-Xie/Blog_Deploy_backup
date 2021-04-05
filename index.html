@@ -115,14 +115,34 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-essay">
+
+    <a href="/categories/essay" rel="section"><i class="fa fa-edit fa-fw"></i>随笔</a>
+
+  </li>
+        <li class="menu-item menu-item-write">
+
+    <a href="/categories/write" rel="section"><i class="fa fa-align-left fa-fw"></i>写作</a>
+
+  </li>
+        <li class="menu-item menu-item-read">
+
+    <a href="/categories/read" rel="section"><i class="fa fa-book fa-fw"></i>阅读</a>
+
+  </li>
+        <li class="menu-item menu-item-study">
+
+    <a href="/categories/study" rel="section"><i class="fa fa-university fa-fw"></i>学习</a>
+
+  </li>
+        <li class="menu-item menu-item-code">
+
+    <a href="/categories/code" rel="section"><i class="fa fa-code fa-fw"></i>编程</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-tags">
@@ -193,7 +213,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-04 23:58:50" itemprop="dateModified" datetime="2021-04-04T23:58:50+08:00">2021-04-04</time>
+                <time title="修改时间：2021-04-05 21:10:02" itemprop="dateModified" datetime="2021-04-05T21:10:02+08:00">2021-04-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -201,7 +221,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%A2%98%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">题库</span></a>
+                  <a href="/categories/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
                 </span>
             </span>
 
@@ -226,43 +246,15 @@
 
 <h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h4 id="提交网址"><a href="#提交网址" class="headerlink" title="提交网址"></a>提交网址</h4><h5 id="http-t-cn-E9WMRTE"><a href="#http-t-cn-E9WMRTE" class="headerlink" title="http://t.cn/E9WMRTE"></a><a target="_blank" rel="noopener" href="http://t.cn/E9WMRTE">http://t.cn/E9WMRTE</a></h5><h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line"><span class="comment">#include &lt;cstdio&gt;</span></span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (int a = 0; a &lt;= 9; a++)&#123;</span><br><span class="line">        <span class="keyword">for</span> (int b = 0; b &lt;= 9; b++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (int c = 0; c &lt;= 9; c++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (a * 100 + b * 110 + c * 12 == 532)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">&quot;%d %d %d\n&quot;</span>, a, b, c);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-反序数"><a href="#2-反序数" class="headerlink" title="2.反序数"></a>2.反序数</h3><h4 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">设N是一个四位数，它的9倍恰好是其反序数（例如：1234的反序数是4321），求N的值。</span><br></pre></td></tr></table></figure>
-
-<h4 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">题目没有任何输入。</span><br></pre></td></tr></table></figure>
-
-<h4 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输出题目要求的4位数，如果结果有多组，则每组结果之间以回车隔开。</span><br></pre></td></tr></table></figure>
-
-<h4 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="提交网址-1"><a href="#提交网址-1" class="headerlink" title="提交网址"></a>提交网址</h4><h5 id="http-t-cn-E9WBrut"><a href="#http-t-cn-E9WBrut" class="headerlink" title="http://t.cn/E9WBrut"></a><a target="_blank" rel="noopener" href="http://t.cn/E9WBrut">http://t.cn/E9WBrut</a></h5><h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line"><span class="comment">#include &lt;cstdio&gt;</span></span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int Reverse(int x)</span><br><span class="line">&#123;</span><br><span class="line">    int revx = 0;</span><br><span class="line">    <span class="keyword">while</span> (x != 0)</span><br><span class="line">    &#123;</span><br><span class="line">        revx *= 10;</span><br><span class="line">        revx += x % 10;</span><br><span class="line">        x /= 10;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> revx;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (int i = 1000; i &lt;= 9999; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (i * 9 == Reverse(i))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-今年的第几天？"><a href="#3-今年的第几天？" class="headerlink" title="3.今年的第几天？"></a>3.今年的第几天？</h3><h4 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输入年、月、日，计算该天是本年的第几天。</span><br></pre></td></tr></table></figure>
-
-<h4 id="输入-2"><a href="#输入-2" class="headerlink" title="输入"></a>输入</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">包括3个整数：年(1&lt;=Y&lt;=3000)、月(1&lt;=M&lt;=12)、日(1&lt;=D&lt;=31)。</span><br></pre></td></tr></table></figure>
-
-<h4 id="输出-2"><a href="#输出-2" class="headerlink" title="输出"></a>输出</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入可能有多组测试数据，对于每一组测试数据，</span><br><span class="line">输出一个整数，代表Input中的年、月、日对应本年的第几天。</span><br></pre></td></tr></table></figure>
-
-<h4 id="样例输入-2"><a href="#样例输入-2" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1990 9 20</span><br><span class="line">2000 5 1</span><br></pre></td></tr></table></figure>
-
-<h4 id="样例输出-2"><a href="#样例输出-2" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">263</span><br><span class="line">122</span><br></pre></td></tr></table></figure>
-
-<h4 id="提交网址-2"><a href="#提交网址-2" class="headerlink" title="提交网址"></a>提交网址</h4><h5 id="http-t-cn-E9jXK5A"><a href="#http-t-cn-E9jXK5A" class="headerlink" title="http://t.cn/E9jXK5A"></a><a target="_blank" rel="noopener" href="http://t.cn/E9jXK5A">http://t.cn/E9jXK5A</a></h5><h4 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line"><span class="comment">#include &lt;cstdio&gt;</span></span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int day_table[2][13]=&#123;</span><br><span class="line">    &#123;0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31&#125;,</span><br><span class="line">    &#123;0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">bool IsLeapYear(int year)&#123;</span><br><span class="line">    <span class="built_in">return</span> (year % 4 == 0 &amp;&amp; year % 100 != 0) || (year % 400 == 0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int year, month, day;</span><br><span class="line">    <span class="keyword">while</span>(scanf(<span class="string">&quot;%d%d%d&quot;</span>,&amp;year,&amp;month,&amp;day) != EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        int count=0;</span><br><span class="line">        int row = IsLeapYear(year);</span><br><span class="line">        <span class="keyword">for</span>(int j = 0; j &lt; month; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            count += day_table[row][j];</span><br><span class="line">        &#125;</span><br><span class="line">        count += day;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, count);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="北京理工大学复试上机题"><a href="#北京理工大学复试上机题" class="headerlink" title="北京理工大学复试上机题"></a>北京理工大学复试上机题</h2><h3 id="1-日期累加"><a href="#1-日期累加" class="headerlink" title="1.日期累加"></a>1.日期累加</h3><h4 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">设计一个程序，它能够计算一个日期加上若干天后是什么日期。</span><br></pre></td></tr></table></figure>
-
-<h4 id="输入-3"><a href="#输入-3" class="headerlink" title="输入"></a>输入</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输入第一行表示样例个数m，接下来m行中，每行4个整数，分别表示年、月、日和累加的天数。</span><br></pre></td></tr></table></figure>
-
-<h4 id="输出-3"><a href="#输出-3" class="headerlink" title="输出"></a>输出</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输出m行，每行按yyyy-mm-dd的个数输出。</span><br></pre></td></tr></table></figure>
-
-<h4 id="样例输入-3"><a href="#样例输入-3" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">2008 2 3 100</span><br></pre></td></tr></table></figure>
-
-<h4 id="样例输出-3"><a href="#样例输出-3" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2008-05-13</span><br></pre></td></tr></table></figure>
-
-<h4 id="提交网址-3"><a href="#提交网址-3" class="headerlink" title="提交网址"></a>提交网址</h4><h5 id="http-t-cn-E9Yw0Cr"><a href="#http-t-cn-E9Yw0Cr" class="headerlink" title="http://t.cn/E9Yw0Cr"></a><a target="_blank" rel="noopener" href="http://t.cn/E9Yw0Cr">http://t.cn/E9Yw0Cr</a></h5><h4 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line"><span class="comment">#include &lt;cstdio&gt;</span></span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int day_table[2][13]=&#123;</span><br><span class="line">    &#123;0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31&#125;,</span><br><span class="line">    &#123;0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">bool IsLeapYear(int year)&#123;</span><br><span class="line">    <span class="built_in">return</span> (year % 4 == 0 &amp;&amp; year % 100 != 0) || (year % 400 == 0);</span><br><span class="line">&#125;</span><br><span class="line">int DaysOfYear(int year) &#123;</span><br><span class="line">    <span class="keyword">if</span> (IsLeapYear(year))</span><br><span class="line">        <span class="built_in">return</span> 366;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">return</span> 365;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int year, month, day;</span><br><span class="line">    int count;</span><br><span class="line">    int caseNumber;</span><br><span class="line">    scanf(<span class="string">&quot;%d&quot;</span>, &amp;caseNumber);</span><br><span class="line">    <span class="keyword">while</span>(caseNumber--)</span><br><span class="line">    &#123;</span><br><span class="line">        scanf(<span class="string">&quot;%d%d%d%d&quot;</span>, &amp;year, &amp;month, &amp;day, &amp;count);</span><br><span class="line">        int row = IsLeapYear(year);</span><br><span class="line">        <span class="keyword">for</span>(int j = 0; j &lt; month; j++)</span><br><span class="line">            count += day_table[row][j];</span><br><span class="line">        count += day;</span><br><span class="line">        <span class="keyword">while</span>(count &gt; DaysOfYear(year))</span><br><span class="line">        &#123;</span><br><span class="line">            count -= DaysOfYear(year);</span><br><span class="line">            year++;</span><br><span class="line">        &#125;</span><br><span class="line">        month=0;</span><br><span class="line">        row = IsLeapYear(year);</span><br><span class="line">        <span class="keyword">while</span>(count &gt; day_table[row][month])</span><br><span class="line">        &#123;</span><br><span class="line">            count -= day_table[row][month];</span><br><span class="line">            month++;</span><br><span class="line">        &#125;</span><br><span class="line">        day = count;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%04d-%02d-%02d\n&quot;</span>, year, month, day);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="提交网址"><a href="#提交网址" class="headerlink" title="提交网址"></a>提交网址</h4><h5 id="http-t-cn-E9WMRTE"><a href="#http-t-cn-E9WMRTE" class="headerlink" title="http://t.cn/E9WMRTE"></a><a target="_blank" rel="noopener" href="http://t.cn/E9WMRTE">http://t.cn/E9WMRTE</a></h5>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/03/ji-shi-ti-ku/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -304,17 +296,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-04-03 12:23:17 / 修改时间：22:01:57" itemprop="dateCreated datePublished" datetime="2021-04-03T12:23:17+08:00">2021-04-03</time>
+              <time title="创建时间：2021-04-03 12:23:17" itemprop="dateCreated datePublished" datetime="2021-04-03T12:23:17+08:00">2021-04-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-05 19:33:40" itemprop="dateModified" datetime="2021-04-05T19:33:40+08:00">2021-04-05</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Undefined/" itemprop="url" rel="index"><span itemprop="name">Undefined</span></a>
+                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
                 </span>
             </span>
 
@@ -422,7 +420,6 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-          
         <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
