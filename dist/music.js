@@ -18,7 +18,7 @@ const ap = new APlayer({
             artist: '王赫野', //音频艺术家
             url: '/music/music1.m4a', //音频外链
             cover: '/music/music1.jpg', //音频封面
-            lrc: 'music1.lrc', //音频歌词，配合上面的lrcType使用
+            lrc: '/music/music1.lrc', //音频歌词，配合上面的lrcType使用
             theme: '#FADFA3' //切换到此音频时的主题色，比上面的 theme 优先级高
         },
     ]
