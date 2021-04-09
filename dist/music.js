@@ -11,14 +11,14 @@ const ap = new APlayer({
     mutex: true,
     listFolded: true, //列表默认折叠
     listMaxHeight: 60,  //列表最大高度
-    // lrcType: 3, //歌词传递方式
+    lrcType: 1, //歌词传递方式
     audio: [  //音频信息,包含以下
         {
             name: '大风吹', //音频名称
             artist: '王赫野', //音频艺术家
             url: '/music/music1.m4a', //音频外链
             cover: '/music/music1.jpg', //音频封面
-            // lrc: 'music1.lrc', //音频歌词，配合上面的lrcType使用
+            lrc: 'music1.lrc', //音频歌词，配合上面的lrcType使用
             theme: '#FADFA3' //切换到此音频时的主题色，比上面的 theme 优先级高
         },
     ]
