@@ -253,6 +253,7 @@ blockquote {
   color: var(--blockquote-color);
   margin: 0;
   padding: 0 15px;
+  word-break: break-all;
 }
 blockquote cite::before {
   content: '-';
@@ -1191,7 +1192,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e8a4af;
+  background: #6c262e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
