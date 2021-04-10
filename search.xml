@@ -226,9 +226,7 @@ _这也是斜体文字_
 <p>【显示效果】</p>
 <p><del>This is removed</del></p>
 <h3 id="Emoji（通用）"><a href="#Emoji（通用）" class="headerlink" title="Emoji（通用）"></a>Emoji（通用）</h3><p>Github 比较有意思的是可以支持 emoji。比如 <code>:smile:</code> 表示笑脸等等，具体可以查看 <a href="http://www.webpagefx.com/tools/emoji-cheat-sheet/">Emoji Cheat Sheet</a></p>
-<p>【显示效果】</p>
-<p>:smile:</p>
-<p>详细信息可以查看<a href="https://guides.github.com/features/mastering-markdown/">官方文档</a>。最后 po 两张 Github 官方推荐的 Markdown Cheat Sheet：<a href="./res/github-markdown-cheatsheet0.jpg">通用语法</a>，<a href="./res/github-markdown-cheatsheet1.jpg">Github 支持语法</a></p>
+<p>详细信息可以查看<a href="https://guides.github.com/features/mastering-markdown/">官方文档</a>。最后 po 两张 Github 官方推荐的 Markdown Cheat Sheet：<a href="./article-000/github-markdown-cheatsheet0.jpg">通用语法</a>，<a href="./article-000/github-markdown-cheatsheet1.jpg">Github 支持语法</a></p>
 <h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul>
 <li>Windows 环境下，推荐 <a href="https://www.typora.io/">Typora</a>、<a href="http://markdownpad.com/">Markdownpad</a>（自带图床功能）</li>
 <li>Mac 环境下，推荐 Typora、<a href="http://25.io/mou/">Mou</a></li>
@@ -324,7 +322,7 @@ _这也是斜体文字_
 <h2 id="关于收费"><a href="#关于收费" class="headerlink" title="关于收费"></a>关于收费</h2><p><strong>马克飞象</strong>为新用户提供 10 天的试用期，试用期过后需要<a href="maxiang.info/vip.html">续费</a>才能继续使用。未购买或者未及时续费，将不能同步新的笔记。之前保存过的笔记依然可以编辑。</p>
 <h2 id="反馈与建议"><a href="#反馈与建议" class="headerlink" title="反馈与建议"></a>反馈与建议</h2><ul>
 <li>微博：<a href="http://weibo.com/u/2788354117">@马克飞象</a>，<a href="http://weibo.com/ggock" title="开发者个人账号">@GGock</a></li>
-<li>邮箱：<a href="mailto:&#x68;&#117;&#x73;&#x74;&#103;&#111;&#99;&#107;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#x68;&#117;&#x73;&#x74;&#103;&#111;&#99;&#107;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></li>
+<li>邮箱：<a href="mailto:&#x68;&#x75;&#115;&#116;&#103;&#111;&#x63;&#107;&#64;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;">&#x68;&#x75;&#115;&#116;&#103;&#111;&#x63;&#107;&#64;&#x67;&#109;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;</a></li>
 </ul>
 <hr>
 <p>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
@@ -441,41 +439,6 @@ _这也是斜体文字_
       </tags>
   </entry>
   <entry>
-    <title>哈尔滨工业大学复试上机题</title>
-    <url>/2021/04/07/article-004/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-最大公约数"><a href="#1-最大公约数" class="headerlink" title="1 最大公约数"></a>1 最大公约数</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;&emsp;输入两个正整数，求其最大公约数。</p>
-<h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>&emsp;&emsp;测试数据有多组，每组输入两个正整数。</p>
-<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>&emsp;&emsp;对于每组输入,请输出其最大公约数。</p>
-<span id="more"></span>
-
-<h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">49 14</span><br></pre></td></tr></table></figure>
-
-<h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">7</span><br></pre></td></tr></table></figure>
-
-<h2 id="提交网址"><a href="#提交网址" class="headerlink" title="提交网址"></a>提交网址</h2><p><a href="http://t.cn/AiCuWLTS">http://t.cn/AiCuWLTS</a></p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><figcaption><span>C++</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">GCD</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">GCD</span>(b, a % b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a, b;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;a, &amp;b) != EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="built_in">GCD</span>(a, b));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="2-素数判定"><a href="#2-素数判定" class="headerlink" title="2 素数判定"></a>2 素数判定</h1><h2 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;&emsp;给定一个数n，要求判断其是否为素数（0,1和负数都是非素数）。</p>
-<h2 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h2><p>&emsp;&emsp;测试数据有多组，每组输入一个数n。</p>
-<h2 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h2><p>&emsp;&emsp;对于每组输入,若是素数则输出yes，否则输入no。</p>
-<h2 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">13</span><br></pre></td></tr></table></figure>
-
-<h2 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yes</span><br></pre></td></tr></table></figure>
-
-<h2 id="提交网址-1"><a href="#提交网址-1" class="headerlink" title="提交网址"></a>提交网址</h2><p><a href="http://t.cn/AiCuWE0Q">http://t.cn/AiCuWE0Q</a></p>
-<h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><figcaption><span>C++</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Judge</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;                             <span class="comment">//判断是否为质数</span></span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">2</span>) &#123;                                <span class="comment">//小于2必定不是</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> bound = <span class="built_in">sqrt</span>(x) + <span class="number">1</span>;                    <span class="comment">//确定判断上界</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= bound; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (x % i == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n) != EOF) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">Judge</span>(n)) &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;yes\n&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;no\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>学习</category>
-        <category>考研</category>
-        <category>复试</category>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>复试</tag>
-        <tag>机试题库</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>浙江大学复试上机题</title>
     <url>/2021/04/07/article-005/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-xxx定律"><a href="#1-xxx定律" class="headerlink" title="1 xxx定律"></a>1 xxx定律</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;&emsp;对于一个数 n，如果是偶数，就把 n 砍掉一半；如果是奇数，把 n 变成 3n + 1 后砍掉一半，直到该数变为 1 为止。请计算需要经过几步才能将 n 变到 1 ，具体可见样例。</p>
@@ -526,6 +489,41 @@ _这也是斜体文字_
       </categories>
       <tags>
         <tag>undefined</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>哈尔滨工业大学复试上机题</title>
+    <url>/2021/04/07/article-004/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-最大公约数"><a href="#1-最大公约数" class="headerlink" title="1 最大公约数"></a>1 最大公约数</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;&emsp;输入两个正整数，求其最大公约数。</p>
+<h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>&emsp;&emsp;测试数据有多组，每组输入两个正整数。</p>
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>&emsp;&emsp;对于每组输入,请输出其最大公约数。</p>
+<span id="more"></span>
+
+<h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">49 14</span><br></pre></td></tr></table></figure>
+
+<h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">7</span><br></pre></td></tr></table></figure>
+
+<h2 id="提交网址"><a href="#提交网址" class="headerlink" title="提交网址"></a>提交网址</h2><p><a href="http://t.cn/AiCuWLTS">http://t.cn/AiCuWLTS</a></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><figcaption><span>C++</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">GCD</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">GCD</span>(b, a % b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a, b;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;a, &amp;b) != EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="built_in">GCD</span>(a, b));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-素数判定"><a href="#2-素数判定" class="headerlink" title="2 素数判定"></a>2 素数判定</h1><h2 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;&emsp;给定一个数n，要求判断其是否为素数（0,1和负数都是非素数）。</p>
+<h2 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h2><p>&emsp;&emsp;测试数据有多组，每组输入一个数n。</p>
+<h2 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h2><p>&emsp;&emsp;对于每组输入,若是素数则输出yes，否则输入no。</p>
+<h2 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">13</span><br></pre></td></tr></table></figure>
+
+<h2 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yes</span><br></pre></td></tr></table></figure>
+
+<h2 id="提交网址-1"><a href="#提交网址-1" class="headerlink" title="提交网址"></a>提交网址</h2><p><a href="http://t.cn/AiCuWE0Q">http://t.cn/AiCuWE0Q</a></p>
+<h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><figcaption><span>C++</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Judge</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;                             <span class="comment">//判断是否为质数</span></span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">2</span>) &#123;                                <span class="comment">//小于2必定不是</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> bound = <span class="built_in">sqrt</span>(x) + <span class="number">1</span>;                    <span class="comment">//确定判断上界</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= bound; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (x % i == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n) != EOF) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">Judge</span>(n)) &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;yes\n&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;no\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>学习</category>
+        <category>考研</category>
+        <category>复试</category>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>复试</tag>
+        <tag>机试题库</tag>
       </tags>
   </entry>
 </search>
