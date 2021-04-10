@@ -1,6 +1,343 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Markdown语言使用指南（网转）</title>
+    <url>/2021/04/06/article-000/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Markdown 是一种轻量级的标记语言，其用简单的标记语法便可达到排版的目的，其可以使我们更加专注于内容的编写，而不需过多关注排版。本文主要整理了 Markdown 中的常用的标记语法，以便自己与他人以后查用。</p>
+<h2 id="段落元素"><a href="#段落元素" class="headerlink" title="段落元素"></a>段落元素</h2><h3 id="1、段落与换行"><a href="#1、段落与换行" class="headerlink" title="1、段落与换行"></a>1、段落与换行</h3><p>Markdown 中的段落指连续的一段文字，编写时段落之间用至少一个<strong>空行</strong>隔开，段落内多个空格将被视为一个空格，段首不支持缩进。</p>
+<p>如果想要在显示时显示多个空行，可以插入 <code>&lt;br/&gt;</code> 来实现，注意的是，插入的 <code>&lt;br/&gt;</code> 应与前后的段落中间至少空一行。</p>
+<h3 id="2、标题"><a href="#2、标题" class="headerlink" title="2、标题"></a>2、标题</h3><p>Markdown 支持两种类型的标题。</p>
+<pre><code>//类型 1
+这是一级标题
+==========
+这是二级标题
+----------
+
+//类型 2
+# 这是一级标题
+## 这是二级标题
+...
+###### 这是六级标题
+</code></pre>
+<p>从上面可以看出类型 1 是在标题下面插入 <code>=</code> 或者 <code>-</code> 来标识标题等级，但局限是其只能表示两个级别的标题。</p>
+<p>类型 2 是在标题前面插入 1 - 6 个 # ，表示 6 个等级的标题，这是比较推荐的用法。</p>
+<h3 id="3、引用"><a href="#3、引用" class="headerlink" title="3、引用"></a>3、引用</h3><p>Markdown 中使用 <code>&gt;</code> 来引用。我们可以在一段文字中的每行开头加上 <code>&gt;</code> 来表示一段引用文字，也可以只在一段文字的开头插入一个 <code>&gt;</code> 来表示，如下面的 1、2 两种方式：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;方式 1</span><br><span class="line">&gt; 这是一句话</span><br><span class="line">&gt; 这是第二句话</span><br></pre></td></tr></table></figure>
+
+
+<p>【显示效果】</p>
+<blockquote>
+<p>这是一句话<br>这是第二句话</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;方式 2</span><br><span class="line">&gt; 这是一句话</span><br><span class="line">这是第二句话</span><br></pre></td></tr></table></figure>
+
+
+<p>【显示效果】</p>
+<blockquote>
+<p>这是一句话<br>这是第二句话</p>
+</blockquote>
+<p>Markdown 支持使用不同数量的 <code>&gt;</code> 表示嵌套引用。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt; 这是外层的引用</span><br><span class="line">&gt; &gt; 这是内层的引用</span><br></pre></td></tr></table></figure>
+
+
+<p>【显示效果】</p>
+<blockquote>
+<p>这是外层的引用</p>
+<blockquote>
+<p>这是内层的引用</p>
+</blockquote>
+</blockquote>
+<h3 id="4、无序列表"><a href="#4、无序列表" class="headerlink" title="4、无序列表"></a>4、无序列表</h3><p>无序列表使用 <code>-</code>、 <code>+</code> 或 <code>*</code> 来作为标记。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- 第一项</span><br><span class="line">- 第二项</span><br><span class="line">- 第三项</span><br></pre></td></tr></table></figure>
+
+
+<p>【显示效果】</p>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+<p>上面的 <code>-</code> 可以用 <code>+</code>、 <code>*</code>替换。需要注意的是，<code>-</code> 等符号与后面的文字至少空一格空格。</p>
+<h3 id="5、有序列表"><a href="#5、有序列表" class="headerlink" title="5、有序列表"></a>5、有序列表</h3><p>有序列表使用数字和紧挨着的点号表示。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 第一项</span><br><span class="line">2. 第二项</span><br><span class="line">3. 第三项</span><br></pre></td></tr></table></figure>
+
+<p>同无序列表一样，标记符号与后面的文字至少空一格空格。但编辑时的数字对显示无影响。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2. 第一项</span><br><span class="line">6. 第二项</span><br><span class="line">1. 第三项</span><br></pre></td></tr></table></figure>
+
+<p>上面的例子与前一个显示的结果完全一致，但建议编辑时按照数字顺序。</p>
+<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><ul>
+<li><p>有序列表和无序列表的每一项中均可嵌套其他列表；</p>
+</li>
+<li><p>在列表项之间要插入段落时，这时需要将列表项之间的段落缩进 4 个空格；</p>
+</li>
+<li><p>使用 <code>1\. </code> 来输出 <code>1. </code>;</p>
+</li>
+</ul>
+<h3 id="6、代码区块"><a href="#6、代码区块" class="headerlink" title="6、代码区块"></a>6、代码区块</h3><p>缩进 4 个空格，需要注意的是，每行代码都需要至少缩进 4 个空格，不能像段落一样采用首行标记的偷懒写法，一个代码区会一直持续到没有缩进 4 个空格的那一行。</p>
+<p>也可以用一对三个连续的撇号 <code>`</code> 来包裹代码段。</p>
+<pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">code</span><br></pre></td></tr></table></figure>
+</code></pre>
+<p>有的解释器还能根据代码的语言从而给代码加上语法高亮。</p>
+<pre><code><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h3 id="7、分割线"><a href="#7、分割线" class="headerlink" title="7、分割线"></a>7、分割线</h3><p>使用三个及以上的 <code>*</code>、 <code>-</code> 或 <code>_</code>来表示一个分割线，符号不能混用，符号之间可以插入多个空格。需要注意的是，使用 <code>-</code> 来插入分割线时需要与上一个段落至少空一行，否则 Markdown 会将上一行文字解释为二级标题。</p>
+<h3 id="8、表格"><a href="#8、表格" class="headerlink" title="8、表格"></a>8、表格</h3><p>表格是 Markdown 比较复杂的一种表示。</p>
+<pre><code>| Table | Col1 | Col2 |
+| ----- |:----:| ----:|
+| Row1  | 1-1  | 1-2  |
+| Row2  | 2-1  | 2-2  |
+| Row3  | 3-1  | 3-2  |
+</code></pre>
+<p>上面第二行中的点代表对齐方式，分别是默认（居左）、居中、居右。</p>
+<p>【显示效果】</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th align="center">Col1</th>
+<th align="right">Col2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Row1</td>
+<td align="center">1-1</td>
+<td align="right">1-2</td>
+</tr>
+<tr>
+<td>Row2</td>
+<td align="center">2-1</td>
+<td align="right">2-2</td>
+</tr>
+<tr>
+<td>Row3</td>
+<td align="center">3-1</td>
+<td align="right">3-2</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><h3 id="9、超链接"><a href="#9、超链接" class="headerlink" title="9、超链接"></a>9、超链接</h3><p>Markdown 中有三种方式实现超链接。</p>
+<pre><code>//方式 1
+[百度](http://www.baidu.com)
+</code></pre>
+<p>【显示效果】</p>
+<p><a href="http://www.baidu.com/">百度</a></p>
+<pre><code>//方式 2
+[百度][Baidu-url]
+[Baidu-url]: http://www.baidu.com
+</code></pre>
+<p>方式 1 较为常用，也可以为链接的文字加上提示文字，只要在括号中超链接加上空格后添加提示内容即可。</p>
+<pre><code>[百度](http://www.baidu.com &quot;这是提示文字&quot;)
+</code></pre>
+<p>【显示效果】</p>
+<p><a href="http://www.baidu.com/" title="这是提示文字">百度</a></p>
+<p>方式 2 由链接文字和链接地址组成，不同的是两者均由 <code>[]</code> 包裹。链接地址的格式为：</p>
+<ul>
+<li>方括号，里面输入链接地址；</li>
+<li>紧接着是一个冒号；</li>
+<li>冒号后面至少一个空格；</li>
+<li>链接地址；</li>
+<li>若有提示文字，空格后用引号或者括号包裹提示文字。</li>
+</ul>
+<p>下面是完整示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[百度][Baidu-url]</span><br><span class="line">[Baidu-url]: http:&#x2F;&#x2F;www.baidu.com &quot;这是提示文字&quot;</span><br></pre></td></tr></table></figure>
+
+<p>第三种方式是用 <code>&lt;&gt;</code> 来包裹 URL。</p>
+<pre><code>//方式 3
+&lt;http://www.baidu.com&gt;
+</code></pre>
+<p>【显示效果】</p>
+<p><a href="http://www.baidu.com/">http://www.baidu.com</a></p>
+<h3 id="10、加粗和斜体"><a href="#10、加粗和斜体" class="headerlink" title="10、加粗和斜体"></a>10、加粗和斜体</h3><p>Markdown 使用 <code>*</code> 和 <code>_</code> 来表示粗体和斜体。</p>
+<pre><code>//加粗
+**这是加粗文字**
+__这也是加粗文字__
+</code></pre>
+<p>【显示效果】</p>
+<p><strong>这是加粗文字</strong><br><strong>这也是加粗文字</strong></p>
+<pre><code>//斜体
+*这是斜体文字*
+_这也是斜体文字_
+</code></pre>
+<p>【显示效果】</p>
+<p><em>这是斜体文字</em><br><em>这也是斜体文字</em></p>
+<p>被偶数个 <code>*</code> 或 <code>_</code> 包裹的文字显示加粗效果，被奇数个包裹的为倾斜效果。</p>
+<p>需要注意的是，<code>*</code> 和 <code>-</code> 要成对出现，不能混合使用，也不能只出现一个。同时，标识符号要与标识的文字紧挨着，符号与符号之间、符号文字之间不能有任何空格。</p>
+<h3 id="11、代码"><a href="#11、代码" class="headerlink" title="11、代码"></a>11、代码</h3><p>使用 <code>`</code> (撇号) 来包裹一小段代码。</p>
+<pre><code>`Hello world.`
+</code></pre>
+<p>若想在代码中添加撇号，可以使用多个撇号包裹里面需要添加的撇号，但注意里面的连续的撇号数量不能超过外面的数量。</p>
+<pre><code>//显示一个撇号
+`` ` ``
+//显示两个撇号
+``` ``  ```
+</code></pre>
+<h3 id="12、图片"><a href="#12、图片" class="headerlink" title="12、图片"></a>12、图片</h3><p>图片的插入方式跟超链接前两种插入方式类似。</p>
+<pre><code>//方式 1
+![如果图片不能显示，就显示这段文字](图片 url)
+
+//方式 2
+![如果图片不能显示，就显示这段文字][Image-url]
+[Image-url]: 图片url &quot;这是提示文字&quot;
+</code></pre>
+<h2 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠 \"></a>反斜杠 <code>\</code></h2><p>我们经常需要在文章中插入一些特殊符号，而这些符号恰好是前面所讲的标识符号，可以在特殊符号前插入 <code>\</code> 来直接显示符号，而不让 Markdown 来将其解释为标识符号。</p>
+<p>Markdown 支持以下这些符号前插入 <code>\</code> 而显示其本来样子：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\   反斜线</span><br><span class="line">&#96;   反引号</span><br><span class="line">*   星号</span><br><span class="line">_   底线</span><br><span class="line">&#123;&#125;  花括号</span><br><span class="line">[]  方括号</span><br><span class="line">()  括弧</span><br><span class="line">#   井字号</span><br><span class="line">+   加号</span><br><span class="line">-   减号</span><br><span class="line">.   英文句点</span><br><span class="line">!   惊叹号</span><br></pre></td></tr></table></figure>
+
+
+<p>【显示效果】</p>
+<p>\   反斜线<br>`   反引号<br>*   星号<br>_   底线<br>{}  花括号<br>[]  方括号<br>()  括弧<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   惊叹号</p>
+<h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><p>其实，市场上有很多的 Markdown 解释器，它们大都能支持上面所讲的语法，但呈现出的样式往往不一。另外，不同的解释器还能支持其他自己定义的语法，比如 Github 还能支持 emoji。下面再着重介绍 Github 支持的几个 Markdown 语法。不过需要注意的是，有些语法只能在 issue 或者 pull request 上使用，这个在后面讲每个语法时会标记（约定：“通用”表示在 Github 任何地方可以使用的语法，“特殊”表示只能在 issue 或者 pull request 上使用）。</p>
+<h3 id="语法高亮-通用"><a href="#语法高亮-通用" class="headerlink" title="语法高亮(通用)"></a>语法高亮(通用)</h3><p>上面说过，有的解释器是能够显示语法高亮的，Github 就可以。</p>
+<h3 id="任务列表（通用）"><a href="#任务列表（通用）" class="headerlink" title="任务列表（通用）"></a>任务列表（通用）</h3><pre><code>- [ ] task one
+- [x] task two
+</code></pre>
+<p>【显示效果】</p>
+<ul>
+<li><input disabled="" type="checkbox"> task one</li>
+<li><input checked="" disabled="" type="checkbox"> task two</li>
+</ul>
+<p>用法跟普通列表的用法差不多，只不过在每一项文字前面加了 <code>[ ]</code> 或者 <code>[x]</code>。<code>[ ]</code> 中间有且只有一个空格，表示未完成，另一个表示已完成。</p>
+<h3 id="表格（通用）"><a href="#表格（通用）" class="headerlink" title="表格（通用）"></a>表格（通用）</h3><p>Github 支持更简单的 table 语法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">First Header | Second Header</span><br><span class="line">------------ | -------------</span><br><span class="line">Content from cell 1 | Content from cell 2</span><br><span class="line">Content in the first column | Content in the second column</span><br></pre></td></tr></table></figure>
+
+
+<p>【显示效果】</p>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content from cell 1</td>
+<td>Content from cell 2</td>
+</tr>
+<tr>
+<td>Content in the first column</td>
+<td>Content in the second column</td>
+</tr>
+</tbody></table>
+<p>表头与项用一排 <code>-</code> 分隔开，每一列用 <code>|</code> 分隔开。</p>
+<h3 id="SHA-引用（特殊）"><a href="#SHA-引用（特殊）" class="headerlink" title="SHA 引用（特殊）"></a>SHA 引用（特殊）</h3><p>每一次 commit 都会产生一个 id，用 <code>@id</code> 的方式可以链接到某个项目的特定的 commit。比如用 <code>jquery/jquery@1b9575b9d14399e9426b9eacdd92b3717846c3f2</code> 就能链接到 jquery 的一次 commit 记录上。</p>
+<h3 id="issue-引用（特殊）"><a href="#issue-引用（特殊）" class="headerlink" title="issue 引用（特殊）"></a>issue 引用（特殊）</h3><p>用 <code>#1</code> 来引用当前 repo 的第一个 issue，也可以用 <code>jquery/jquery#1</code> 引用 jquery 的第一次 issue。</p>
+<h3 id="（特殊）"><a href="#（特殊）" class="headerlink" title="@（特殊）"></a>@（特殊）</h3><p>用 <code>@</code> 来提醒目标用户。比如 <code>@CompileYouth</code> 可以 @ 到我。</p>
+<h3 id="删除符号（通用）"><a href="#删除符号（通用）" class="headerlink" title="删除符号（通用）"></a>删除符号（通用）</h3><p>用连续两个 <code>~</code> 包围的词会被加上删除符。比如 <code>~~This is removed~~</code>。</p>
+<p>【显示效果】</p>
+<p><del>This is removed</del></p>
+<h3 id="Emoji（通用）"><a href="#Emoji（通用）" class="headerlink" title="Emoji（通用）"></a>Emoji（通用）</h3><p>Github 比较有意思的是可以支持 emoji。比如 <code>:smile:</code> 表示笑脸等等，具体可以查看 <a href="http://www.webpagefx.com/tools/emoji-cheat-sheet/">Emoji Cheat Sheet</a></p>
+<p>【显示效果】</p>
+<p>:smile:</p>
+<p>详细信息可以查看<a href="https://guides.github.com/features/mastering-markdown/">官方文档</a>。最后 po 两张 Github 官方推荐的 Markdown Cheat Sheet：<a href="./res/github-markdown-cheatsheet0.jpg">通用语法</a>，<a href="./res/github-markdown-cheatsheet1.jpg">Github 支持语法</a></p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul>
+<li>Windows 环境下，推荐 <a href="https://www.typora.io/">Typora</a>、<a href="http://markdownpad.com/">Markdownpad</a>（自带图床功能）</li>
+<li>Mac 环境下，推荐 Typora、<a href="http://25.io/mou/">Mou</a></li>
+<li>笔记软件： 为知笔记较好的支持 markdown，且支持 Windows、Mac、web、ios、android 等各个平台</li>
+<li>当然，还有 Github</li>
+</ul>
+<h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><p>Markdown 文件的编辑在不同编辑器中有不一样的表现，我主要介绍一下在 Atom 中使用 Markdown 的情况。</p>
+<p>Atom 官方自带了一个插件，叫 <a href="https://atom.io/packages/markdown-preview">markdown-preview</a>，可以在 Atom 中进行预览。当然，Atom 还有很多第三方的 Markdown 插件，我使用的是 <a href="https://atom.io/packages/markdown-writer">markdown-writer</a>，可以使我更方便地编辑 Markdown 文件，当然你可以根据自己的需要下载插件。</p>
+<p>在 Atom 中，其他的使用方式就不赘述了，唯一需要提一下的是插入 table。在 Markdown 中插入 table 是一件比较麻烦的事情，而在 Atom 中，可以简化操作，就是直接输入 <code>table</code> 然后按 Enter 键，编辑器便会自动生成 table 的模板，比自己手写便捷多了。</p>
+<p>拓展阅读：</p>
+<ol>
+<li><a href="http://wowubuntu.com/markdown/">Markdown 语法说明</a></li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>My First Post</title>
+    <url>/2021/04/06/article-001/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="欢迎使用马克飞"><a href="#欢迎使用马克飞" class="headerlink" title="欢迎使用马克飞"></a>欢迎使用马克飞</h1><p>@(示例笔记本)[马克飞象|帮助|Markdown]</p>
+<p><strong>马克飞象</strong>是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述：</p>
+<ul>
+<li><strong>功能丰富</strong> ：支持高亮代码块、<em>LaTeX</em> 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；</li>
+<li><strong>得心应手</strong> ：简洁高效的编辑器，提供<a href="http://maxiang.info/client_zh">桌面客户端</a>以及<a href="https://chrome.google.com/webstore/detail/kidnkfckhbdkfgbicccmdggmpgogehop">离线Chrome App</a>，支持移动端 Web；</li>
+<li><strong>深度整合</strong> ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理。</li>
+</ul>
+<hr>
+<p>[TOC]</p>
+<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><blockquote>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— <a href="https://zh.wikipedia.org/wiki/Markdown">维基百科</a></p>
+</blockquote>
+<p>正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个<a href="http://www.example.com/">链接</a>或一个脚注[^demo]。下面列举了几个高级功能，更多语法请按<code>Ctrl + /</code>查看帮助。 </p>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span>(<span class="params">param1=<span class="string">&#x27;&#x27;</span>, param2=<span class="number">0</span></span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;A docstring&#x27;&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="built_in">print</span> <span class="string">&#x27;Greater&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="literal">None</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">&#x27;&#x27;&#x27;interpreter</span></span><br><span class="line"><span class="string"><span class="meta">... </span>prompt&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="LaTeX-公式"><a href="#LaTeX-公式" class="headerlink" title="LaTeX 公式"></a>LaTeX 公式</h3><p>可以创建行内公式，例如 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。或者块级公式：</p>
+<p>$$    x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th align="left">Item</th>
+<th align="right">Value</th>
+<th align="center">Qty</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Computer</td>
+<td align="right">1600 USD</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="left">Phone</td>
+<td align="right">12 USD</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="left">Pipe</td>
+<td align="right">1 USD</td>
+<td align="center">234</td>
+</tr>
+</tbody></table>
+<h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: Start</span><br><span class="line">e&#x3D;&gt;end</span><br><span class="line">op&#x3D;&gt;operation: My Operation</span><br><span class="line">cond&#x3D;&gt;condition: Yes or No?</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+
+<p>以及时序图:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>提示：</strong>想了解更多，请查看<strong>流程图</strong><a href="http://adrai.github.io/flowchart.js/">语法</a>以及<strong>时序图</strong><a href="http://bramp.github.io/js-sequence-diagrams/">语法</a>。</p>
+</blockquote>
+<h3 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h3><p>使用 <code>- [ ]</code> 和 <code>- [x]</code> 语法可以创建复选框，实现 todo-list 等功能。例如：</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 已完成事项</li>
+<li><input disabled="" type="checkbox"> 待办事项1</li>
+<li><input disabled="" type="checkbox"> 待办事项2</li>
+</ul>
+<blockquote>
+<p><strong>注意：</strong>目前支持尚不完全，在印象笔记中勾选复选框是无效、不能同步的，所以必须在<strong>马克飞象</strong>中修改 Markdown 原文才可生效。下个版本将会全面支持。</p>
+</blockquote>
+<h2 id="印象笔记相关"><a href="#印象笔记相关" class="headerlink" title="印象笔记相关"></a>印象笔记相关</h2><h3 id="笔记本和标签"><a href="#笔记本和标签" class="headerlink" title="笔记本和标签"></a>笔记本和标签</h3><p><strong>马克飞象</strong>增加了<code>@(笔记本)[标签A|标签B]</code>语法, 以选择笔记本和添加标签。 <strong>绑定账号后</strong>， 输入<code>(</code>自动会出现笔记本列表，请从中选择。</p>
+<h3 id="笔记标题"><a href="#笔记标题" class="headerlink" title="笔记标题"></a>笔记标题</h3><p><strong>马克飞象</strong>会自动使用文档内出现的第一个标题作为笔记标题。例如本文，就是第一行的 <code>欢迎使用马克飞象</code>。</p>
+<h3 id="快捷编辑"><a href="#快捷编辑" class="headerlink" title="快捷编辑"></a>快捷编辑</h3><p>保存在印象笔记中的笔记，右上角会有一个红色的编辑按钮，点击后会回到<strong>马克飞象</strong>中打开并编辑该笔记。</p>
+<blockquote>
+<p><strong>注意：</strong>目前用户在印象笔记中单方面做的任何修改，马克飞象是无法自动感知和更新的。所以请务必回到马克飞象编辑。</p>
+</blockquote>
+<h3 id="数据同步"><a href="#数据同步" class="headerlink" title="数据同步"></a>数据同步</h3><p><strong>马克飞象</strong>通过<strong>将Markdown原文以隐藏内容保存在笔记中</strong>的精妙设计，实现了对Markdown的存储和再次编辑。既解决了其他产品只是单向导出HTML的单薄，又规避了服务端存储Markdown带来的隐私安全问题。这样，服务端仅作为对印象笔记 API调用和数据转换之用。</p>
+<blockquote>
+<p><strong>隐私声明：用户所有的笔记数据，均保存在印象笔记中。马克飞象不存储用户的任何笔记数据。</strong></p>
+</blockquote>
+<h3 id="离线存储"><a href="#离线存储" class="headerlink" title="离线存储"></a>离线存储</h3><p><strong>马克飞象</strong>使用浏览器离线存储将内容实时保存在本地，不必担心网络断掉或浏览器崩溃。为了节省空间和避免冲突，已同步至印象笔记并且不再修改的笔记将删除部分本地缓存，不过依然可以随时通过<code>文档管理</code>打开。</p>
+<blockquote>
+<p><strong>注意：</strong>虽然浏览器存储大部分时候都比较可靠，但印象笔记作为专业云存储，更值得信赖。以防万一，<strong>请务必经常及时同步到印象笔记</strong>。</p>
+</blockquote>
+<h2 id="编辑器相关"><a href="#编辑器相关" class="headerlink" title="编辑器相关"></a>编辑器相关</h2><h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>右侧系统菜单（快捷键<code>Ctrl + M</code>）的<code>设置</code>中，提供了界面字体、字号、自定义CSS、vim/emacs 键盘模式等高级选项。</p>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>帮助    <code>Ctrl + /</code><br>同步文档    <code>Ctrl + S</code><br>创建文档    <code>Ctrl + Alt + N</code><br>最大化编辑器    <code>Ctrl + Enter</code><br>预览文档 <code>Ctrl + Alt + Enter</code><br>文档管理    <code>Ctrl + O</code><br>系统菜单    <code>Ctrl + M</code> </p>
+<p>加粗    <code>Ctrl + B</code><br>插入图片    <code>Ctrl + G</code><br>插入链接    <code>Ctrl + L</code><br>提升标题    <code>Ctrl + H</code></p>
+<h2 id="关于收费"><a href="#关于收费" class="headerlink" title="关于收费"></a>关于收费</h2><p><strong>马克飞象</strong>为新用户提供 10 天的试用期，试用期过后需要<a href="maxiang.info/vip.html">续费</a>才能继续使用。未购买或者未及时续费，将不能同步新的笔记。之前保存过的笔记依然可以编辑。</p>
+<h2 id="反馈与建议"><a href="#反馈与建议" class="headerlink" title="反馈与建议"></a>反馈与建议</h2><ul>
+<li>微博：<a href="http://weibo.com/u/2788354117">@马克飞象</a>，<a href="http://weibo.com/ggock" title="开发者个人账号">@GGock</a></li>
+<li>邮箱：<a href="mailto:&#x68;&#117;&#x73;&#x74;&#103;&#111;&#99;&#107;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#x68;&#117;&#x73;&#x74;&#103;&#111;&#99;&#107;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></li>
+</ul>
+<hr>
+<p>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
+<p>[^demo]: 这是一个示例脚注。请查阅 <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide#footnotes">MultiMarkdown 文档</a> 关于脚注的说明。 <strong>限制：</strong> 印象笔记的笔记内容使用 <a href="https://dev.yinxiang.com/doc/articles/enml.php">ENML</a> 格式，基于 HTML，但是不支持某些标签和属性，例如id，这就导致<code>脚注</code>和<code>TOC</code>无法正常点击。</p>
+]]></content>
+      <categories>
+        <category>undefined</category>
+      </categories>
+      <tags>
+        <tag>undefined</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>清华大学复试上机题</title>
     <url>/2021/04/06/article-002/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-abc"><a href="#1-abc" class="headerlink" title="1 abc"></a>1 abc</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;&emsp;设a、b、c均是0到9之间的数字，abc、bcc是两个三位数，且有：abc+bcc=532。求满足条件的所有a、b、c的值。</p>
@@ -78,17 +415,6 @@
       </tags>
   </entry>
   <entry>
-    <title>My First Post</title>
-    <url>/2021/04/06/article-001/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      <categories>
-        <category>undefined</category>
-      </categories>
-      <tags>
-        <tag>undefined</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>北京理工大学复试上机题</title>
     <url>/2021/04/06/article-003/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-日期累加"><a href="#1-日期累加" class="headerlink" title="1 日期累加"></a>1 日期累加</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;&emsp;设计一个程序，它能够计算一个日期加上若干天后是什么日期。</p>
@@ -150,32 +476,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/04/06/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>undefined</category>
-      </categories>
-      <tags>
-        <tag>undefined</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>浙江大学复试上机题</title>
     <url>/2021/04/07/article-005/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-xxx定律"><a href="#1-xxx定律" class="headerlink" title="1 xxx定律"></a>1 xxx定律</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>&emsp;&emsp;对于一个数 n，如果是偶数，就把 n 砍掉一半；如果是奇数，把 n 变成 3n + 1 后砍掉一半，直到该数变为 1 为止。请计算需要经过几步才能将 n 变到 1 ，具体可见样例。</p>
@@ -200,6 +500,32 @@
       <tags>
         <tag>复试</tag>
         <tag>机试题库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/04/06/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>undefined</category>
+      </categories>
+      <tags>
+        <tag>undefined</tag>
       </tags>
   </entry>
 </search>
