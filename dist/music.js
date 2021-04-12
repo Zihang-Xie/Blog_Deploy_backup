@@ -7,7 +7,7 @@ const ap = new APlayer({
   listMaxHeight: 60,			//列表最大高度
   fixed: true,
   preload: 'auto', 			//预加载，可选值: 'none', 'metadata', 'auto'
-  theme: '#ffac87',			//主题色
+  theme: '#ff9566',			//主题色
   autoplay: false,			//自动播放
   lrcType: 3,				//歌词传递方式
   mutex: true, 				//互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
