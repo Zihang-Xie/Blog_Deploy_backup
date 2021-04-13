@@ -29,30 +29,30 @@ const ap = new APlayer({
     {  				        
       name: '逍遥叹', 			
       artist: '胡歌', 		        
-      url: 'http://ws.stream.qqmusic.qq.com/C400000CZa7c21FyFX.m4a?guid=2948374960&vkey=E59767DB3606F43A54B21E0F777F50D6C3D1BF5FC558226C9EBE5EDA5EFB1CF0A87AF9EEEEB1CB03DF95FAC6F0DE3BA19F531FC8CA2991B4', 						
+      url: '/music/music3.m4a', 						
       cover: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000002fNZDg1LHT3o_1.jpg', 	
       lrc: '/music/music3.lrc', 
     },
     {  				        
       name: '六月的雨', 			
       artist: '胡歌', 		        
-      url: 'http://ws.stream.qqmusic.qq.com/C400004Ft5S91k70vW.m4a?guid=2948374960&vkey=ADF0E9A4E17B43B246084306E928420CAA955B7C0AFC8853DA381979BA3907C3758FBF552603A6106A0AAF40D26197AE6F3E3E72D8C51E33', 						
+      url: '/music/music4.m4a', 						
       cover: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000000pjTj301YeBh_1.jpg', 	
       lrc: '/music/music4.lrc', 
     },
     {  				        
       name: '一直很安静', 			
       artist: '阿桑', 		        
-      url: 'http://ws.stream.qqmusic.qq.com/C4000032dTpd0ZgYaI.m4a?guid=2948374960&vkey=317AB42D526FF1FA4EA8D23602964DE91E824C9B6159F71CD99C966EE96FB1FA03BE8943497E21080CC76F562228A9EEF0F132B03AB25E0C', 						
+      url: '/music/music5.m4a', 						
       cover: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000000Z5NxR0IQ5te_1.jpg', 	
-      lrc: '/music/music6.lrc', 
+      lrc: '/music/music5.lrc', 
     },
     {  				        
       name: '想见你想见你想见你', 			
       artist: '八三夭乐团 (831)', 		        
-      url: 'http://ws.stream.qqmusic.qq.com/C400001wW0fs3vimi8.m4a?guid=2948374960&vkey=AFF140AF7682BC93FD22951A429567D1D814959DEE68427BF4EA7CE87D9F7749CF7537C662634586F4E1D47169770CD6413ACF2A43C555F9', 						
+      url: '/music/music6.m4a', 						
       cover: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003MlPxI0gqWpU_1.jpg', 	
-      lrc: '/music/music5.lrc', 
+      lrc: '/music/music6.lrc', 
     }
   ]
 });
